@@ -1,0 +1,35 @@
+$table-border-color: #ccc;
+$table-header-bg: #f0f0f0;
+$table-hover-bg: #f9f9f9;
+$table-padding: 12px;
+$table-border-radius: 8px;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $table-border-color;
+  border-radius: $table-border-radius;
+
+  thead {
+    background-color: $table-header-bg;
+    
+    th {
+      padding: $table-padding;
+      border: 1px solid $table-border-color;
+      text-align: left;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: $table-hover-bg;
+      }
+
+      td {
+        padding: $table-padding;
+        border: 1px solid $table-border-color;
+      }
+    }
+  }
+}
